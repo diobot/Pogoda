@@ -1,0 +1,54 @@
+#search {
+height: 50px;
+width: 200px;
+font-size: 20px;
+margin: 80px auto;
+position: absolute;
+border-radius: 50px;
+}
+
+#town{
+    height: 50px;
+    width: 90%;
+    font-size: 20px;
+    margin: 15px auto;
+    position: absolute;
+    text-align: center;
+    border-radius: 50px;
+}
+#town::placeholder{
+    text-align: center;
+}
+
+#container{
+margin: 50px auto 0 auto;
+width: 700px;
+min-height: 500px;
+background-color: blue;
+display: flex;
+align-content: center;
+justify-content: center;
+position: relative;
+border-radius: 30px;
+}
+
+ul{
+    margin: 20px;
+
+}
+li{
+   display: inline-block; 
+   margin: 0 5px 0 0;
+}
+
+.list{
+    background-color: aqua;
+    margin: 200px;
+    overflow-x: auto;
+    white-space: nowrap;
+    border-radius: 30px;
+}
+
+.hide{
+    display: none;
+}
