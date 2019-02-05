@@ -59,3 +59,8 @@ var button = document.querySelector('button');
         }
         button.disabled= true;
     };
+   
+    var input = document.querySelector('input');
+    input.addEventListener(focus, function(){  
+        document.querySelector('button').disabled=false;
+    },true);      //nie działa...
