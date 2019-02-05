@@ -1,32 +1,20 @@
-// function myBtn(){
-
-// var town = document.getElementById('town').value;
-
-//     function(){
-//         // var requestURL = 'http://api.openweathermap.org/data/2.5/forecast?q='+town+'1&APPID=ac6c6075d5e794c18b1b66402ab3eb91';
-//         // var request = new XMLHttpRequest();
-//         // request.open('GET', requestURL);
-//         // request.responseType = 'json';
-//         // request.send();
-//     }
-
-// }
 
 function calculate(kelvin) {
     return Math.ceil(kelvin - 272.15);
 }
     var list = document.createElement('div');
     list.setAttribute('class','hide');
+    list.setAttribute('id','box');
     var container = document.getElementById('container');
     container.appendChild(list);
-    var ulCreate = document.createElement('ul');
-    list.appendChild(ulCreate);
+    
 
 function addElement(value) {
-    var li = document.createElement('li');
-    li.innerText = value;
-    var ul = document.querySelector('ul');
-    ul.appendChild(li);
+    var d = document.createElement('div');
+    d.setAttribute('class','cell');
+    d.innerText = value;
+    var l = document.getElementById('box');
+    l.appendChild(d);
 }
 
 var button = document.querySelector('button');
