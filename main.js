@@ -61,6 +61,7 @@ var button = document.querySelector('button');
     };
    
     var input = document.querySelector('input');
-    input.addEventListener(focus, function(){  
-        document.querySelector('button').disabled=false;
-    },true);      //nie działa...
+    input.onfocus = function(){
+      var btn = document.querySelector('button');
+      btn.disabled=false;
+    };
