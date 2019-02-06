@@ -35,7 +35,11 @@ var button = document.querySelector('button');
               // sprawdzam czy istnieja dane do wyswietlenia
               if (jsonData.cod === '200') {
                 jsonData.list.forEach(function(item) {
-                  addElement(item.dt_txt + ': ' + calculate(item.main.temp)+ ' ℃');
+                  var equalDate = item.dt_txt;
+                  var checkDate = equalDate.substr(0, 10);
+                  console.log(checkDate);
+
+                  addElement(item.dt_txt);
                 });
               } else {
                 alert('Upppssss...');
